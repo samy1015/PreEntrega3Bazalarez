@@ -1,0 +1,54 @@
+/* header */
+
+header {
+    max-width: 1500px;
+    margin: auto;
+
+    nav {
+        height: 110px;
+
+        div {
+
+            a {
+
+                img {
+                    object-fit: cover;
+                    width: 16rem;
+                }
+            }
+
+            nav {
+
+                ul {
+
+                    li {
+                        margin: auto 5px;
+                        font-size: 1.1rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+h2 {
+    width: auto;
+    margin: auto;
+}
+
+.headerImgLogo {
+    object-fit: cover;
+    width: 16rem;
+}
+
+
+.headerBarNav {
+    height: 110px;
+}
+
+.headerMenuLetra {
+    margin: auto 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}

@@ -1,0 +1,34 @@
+.imgDer {
+    border: 2px solid black;
+    border-radius: 40px;
+    width: 95%;
+}
+
+.imgIzq {
+    border-radius: 40px;
+    width: 95%;
+    border: 2px solid black;
+}
+
+.mainH2 {
+    margin: 40px;
+    font-size: 1.5rem;
+}
+
+.franja1 {
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(90deg, #dcebff 0, #dcebff 25%, #c6defe 50%, #b0cff9 75%, #b0cff9 100%);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.franja2 {
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(270deg, #dcebff 0, #dcebff 25%, #c6defe 50%, #b0cff9 75%, #b0cff9 100%);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}

@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dcebff;
+  max-width: 1900px;
+  margin: auto;
+}
+
+/* header */
+header {
+  max-width: 1500px;
+  margin: auto;
+}
+header nav {
+  height: 110px;
+}
+header nav div a img {
+  object-fit: cover;
+  width: 16rem;
+}
+header nav div nav ul li {
+  margin: auto 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+h2 {
+  width: auto;
+  margin: auto;
+}
+
+.headerImgLogo {
+  object-fit: cover;
+  width: 16rem;
+}
+
+.headerBarNav {
+  height: 110px;
+}
+
+.headerMenuLetra {
+  margin: auto 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* main */
+main h1 {
+  width: 100%;
+  text-align: center;
+  padding: 80px 0 200px;
+  margin: 0;
+}
+
+.imgDer {
+  border: 2px solid black;
+  border-radius: 40px;
+  width: 95%;
+}
+
+.imgIzq {
+  border-radius: 40px;
+  width: 95%;
+  border: 2px solid black;
+}
+
+.mainH2 {
+  margin: 40px;
+  font-size: 1.5rem;
+}
+
+.franja1 {
+  padding: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: linear-gradient(90deg, #dcebff 0, #dcebff 25%, #c6defe 50%, #b0cff9 75%, #b0cff9 100%);
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.franja2 {
+  padding: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: linear-gradient(270deg, #dcebff 0, #dcebff 25%, #c6defe 50%, #b0cff9 75%, #b0cff9 100%);
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+/*# sourceMappingURL=estilos.css.map */
