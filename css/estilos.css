@@ -107,10 +107,10 @@ footer {
 }
 footer img {
   width: 100px;
-  margin: 3% auto;
+  margin: 20px auto;
 }
 footer nav {
-  margin: 3% auto;
+  margin: 20px auto;
   display: flex;
   width: 10%;
   justify-content: space-between;
