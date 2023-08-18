@@ -10,6 +10,13 @@ body {
   margin: auto;
 }
 
+h1 {
+  width: 100%;
+  text-align: center;
+  padding: 80px 0 200px;
+  margin: 0;
+}
+
 /* header */
 header {
   max-width: 1500px;
@@ -33,17 +40,35 @@ h2 {
   margin: auto;
 }
 
-/* main */
-main h1 {
-  width: 100%;
-  text-align: center;
-  padding: 80px 0 200px;
-  margin: 0;
-}
+/* main vista principal */
 main div {
   margin: 80px auto;
 }
 
+/* main proyectos */
+/* tira de imagenes */
+.mainProyectos {
+  display: flex;
+  width: 1300px;
+  height: 430px;
+  margin: auto;
+}
+.mainProyectos img {
+  width: 0;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+
+.mainProyectos img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+/* main contactanos */
 .headerImgLogo {
   object-fit: cover;
   width: 16rem;
@@ -67,8 +92,9 @@ main div {
 
 .imgIzq {
   border-radius: 40px;
-  width: 95%;
+  width: 85%;
   border: 2px solid black;
+  width: auto 0 auto auto;
 }
 
 .mainH2 {
@@ -83,6 +109,7 @@ main div {
   background-image: linear-gradient(90deg, #dcebff 0, #dcebff 25%, #c6defe 50%, #b0cff9 75%, #b0cff9 100%);
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
+  margin: auto 5%;
 }
 
 .franja2 {
@@ -92,6 +119,7 @@ main div {
   background-image: linear-gradient(270deg, #dcebff 0, #dcebff 25%, #c6defe 50%, #b0cff9 75%, #b0cff9 100%);
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
+  margin: auto 5%;
 }
 
 .logoRedes {
