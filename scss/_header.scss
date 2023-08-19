@@ -1,8 +1,12 @@
 /* header */
 
 header {
-    max-width: 1500px;
+    width: 100%;
     margin: auto;
+    position: sticky;
+    background-color: #b0cff9;
+    border-bottom: 1px solid #0046a4;
+    position: fixed;
 
     nav {
         height: 110px;
@@ -30,9 +34,4 @@ header {
             }
         }
     }
-}
-
-h2 {
-    width: auto;
-    margin: auto;
 }
