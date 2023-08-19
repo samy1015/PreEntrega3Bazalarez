@@ -1,0 +1,42 @@
+/* vista pequeña */
+
+@media (max-width: 767px) {
+
+    h1 {
+        width: 100%;
+        text-align: center;
+        padding: 60px 0 60px;
+        margin: 0;
+    }
+
+    /* header */
+    header {
+        nav {
+            height: 90px;
+        }
+    }
+
+    .headerImgLogo {
+        object-fit: cover;
+        width: 12rem;
+    }
+
+    /* main */
+    main {
+        padding: 50px 5% 40px;
+    }
+
+    /* footer */
+    footer {
+    
+        img {
+            width: 70px;
+            margin: 10px auto;
+        }
+    
+        nav {
+            margin: 10px auto;
+        }
+    
+    }
+}
