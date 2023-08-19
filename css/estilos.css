@@ -58,6 +58,9 @@ header nav div a img {
   object-fit: cover;
   width: 16rem;
 }
+header nav div nav ul {
+  background-color: #b0cff9;
+}
 header nav div nav ul li {
   margin: auto 5px;
   font-size: 1.1rem;
