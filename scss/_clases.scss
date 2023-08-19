@@ -7,3 +7,15 @@
 .logoRedes {
     width: 100%;
 }
+
+.button {
+    width: 50px;
+    margin: auto 0 auto auto;
+}
+
+.mainProyectos img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
