@@ -1,5 +1,4 @@
 /* vista principal */
-
 main {
 
     h2 {
@@ -27,11 +26,9 @@ main {
 }
 
 
-    /* quienes somos */
-
-main {
-    background-image: url(../img/fondoMain.jpg);
-    background-size: cover;
+    /* vista quienes somos */
+.mainQuienesSomos {
+    padding: 180px 20% 200px;
 
     div {
 
@@ -54,7 +51,7 @@ main {
 
 
 
-    /*  vista contactanos */
+    /* vista contactanos */
 
 main {
 
@@ -65,7 +62,7 @@ main {
             width: 100%;
 
             img {
-                width: 50%;
+                width: 60%;
                 margin: auto;
             }
 

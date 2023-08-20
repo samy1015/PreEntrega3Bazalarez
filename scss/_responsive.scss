@@ -1,5 +1,4 @@
-/* vista pequeña */
-
+/* tamaño pequeño */
 @media (max-width: 767px) {
 
     h1 {
@@ -21,22 +20,50 @@
         width: 12rem;
     }
 
-    /* main */
-    main {
+    /* main quienes somos */
+    .mainQuienesSomos {
         padding: 50px 5% 40px;
     }
 
     /* footer */
     footer {
-    
+
         img {
             width: 70px;
             margin: 10px auto;
         }
-    
+
         nav {
             margin: 10px auto;
         }
-    
+
+    }
+}
+
+/* tamaño mediano */
+@media (max-width: 992px) {
+
+    .mainContacto {
+        section {
+            
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                form {
+                    margin: auto;
+
+                    h2 {
+                        text-align: center;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    margin-top: 50px;
+                }
+            }
+        }
     }
 }
