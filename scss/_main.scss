@@ -1,5 +1,5 @@
 /* vista principal */
-main {
+.mainInicio {
 
     h2 {
         font-size: 10rem;
@@ -26,7 +26,7 @@ main {
 }
 
 
-    /* vista quienes somos */
+/* vista quienes somos */
 .mainQuienesSomos {
     padding: 180px 20% 200px;
 
@@ -44,16 +44,8 @@ main {
     }
 }
 
-
-
-
-
-
-
-
-    /* vista contactanos */
-
-main {
+/* vista contactanos */
+.mainContactanos {
 
     section {
 
@@ -96,6 +88,37 @@ main {
                         margin: 3%;
                     }
                 }
+            }
+        }
+    }
+}
+
+/* vista servicios */
+.mainServicios {
+    display: flex;
+    flex-direction: column;
+
+    div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        gap: 100px 20px;
+
+        div {
+            width: 400px;
+            margin: auto;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+
+
+            img {
+                width: auto;
+            }
+
+            h3 {
+                text-align: center;
+                padding: 0;
             }
         }
     }
