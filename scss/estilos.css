@@ -8,7 +8,6 @@
 body {
   background-color: #dcebff;
   width: 100%;
-  height: 100%;
 }
 
 h1 {
@@ -140,32 +139,29 @@ header nav div nav ul li {
 
 /* vista servicios */
 .mainServicios {
-  padding-bottom: 600px;
-}
-.mainServicios section {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(auto, 1fr);
-  gap: 5%;
-  justify-content: center;
-}
-.mainServicios section div {
-  background-color: white;
-  border: 2px solid black;
-  border-radius: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
-.mainServicios section div img {
-  width: 100%;
-  padding: 20px 20px 10px 20px;
+.mainServicios div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 100px 20px;
 }
-.mainServicios section div p {
+.mainServicios div div {
+  width: 400px;
+  margin: auto;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.mainServicios div div img {
+  width: auto;
+}
+.mainServicios div div h3 {
   text-align: center;
-  margin-top: 2%;
-  font-size: 1.5vw;
-  font-weight: bold;
+  padding: 0;
 }
 
 /* footer */
@@ -205,33 +201,9 @@ footer nav li {
     object-fit: cover;
     width: 12rem;
   }
-  /* quienes somos */
+  /* main quienes somos */
   .mainQuienesSomos {
     padding: 50px 5% 40px;
-  }
-  /* servicios */
-  .mainServicios {
-    padding: 50px 5% 600px;
-  }
-  .mainServicios section {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2%;
-  }
-  .mainServicios section div {
-    flex-direction: row;
-    justify-content: start;
-    padding: 3%;
-  }
-  .mainServicios section div img {
-    width: 25%;
-    padding: 0;
-    margin-right: 20px;
-  }
-  .mainServicios section div p {
-    font-size: 5vw;
-    width: auto;
-    text-align: start;
-    margin: auto 0;
   }
   /* footer */
   footer img {
@@ -243,8 +215,7 @@ footer nav li {
   }
 }
 /* tamaño mediano */
-@media (min-width: 767px) and (max-width: 992px) {
-  /* contacto */
+@media (max-width: 992px) {
   .mainContacto section div {
     display: flex;
     flex-direction: column;
@@ -259,19 +230,6 @@ footer nav li {
   .mainContacto section div img {
     width: 100%;
     margin-top: 50px;
-  }
-  /* servicios */
-  .mainServicios {
-    padding: 50px 5% 600px;
-  }
-  .mainServicios section {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3% 10%;
-    margin: 5%;
-  }
-  .mainServicios section div p {
-    margin: auto;
-    font-size: 4vw;
   }
 }
 

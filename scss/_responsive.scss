@@ -20,9 +20,38 @@
         width: 12rem;
     }
 
-    /* main quienes somos */
+    /* quienes somos */
     .mainQuienesSomos {
         padding: 50px 5% 40px;
+    }
+
+    /* servicios */
+    .mainServicios {
+        padding: 50px 5% 600px;
+
+        section {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 2%;
+
+            div {
+                flex-direction: row;
+                justify-content: start;
+                padding: 3%;
+
+                img {
+                    width: 25%;
+                    padding: 0;
+                    margin-right: 20px;
+                }
+
+                p {
+                    font-size: 5vw;
+                    width: auto;
+                    text-align: start;
+                    margin: auto 0;
+                }
+            }
+        }
     }
 
     /* footer */
@@ -41,8 +70,8 @@
 }
 
 /* tamaño mediano */
-@media (max-width: 992px) {
-
+@media (min-width: 767px) and (max-width: 992px) {
+    /* contacto */
     .mainContacto {
         section {
             
@@ -62,6 +91,25 @@
                 img {
                     width: 100%;
                     margin-top: 50px;
+                }
+            }
+        }
+    }
+
+    /* servicios */
+    .mainServicios {
+        padding: 50px 5% 600px;
+    
+        section {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3% 10%;
+            margin: 5%;
+
+            div {
+
+                p {
+                    margin: auto;
+                    font-size: 4vw;
                 }
             }
         }
