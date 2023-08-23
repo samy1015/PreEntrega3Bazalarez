@@ -20,6 +20,51 @@
         width: 12rem;
     }
 
+    /* inicio */
+    .mainInicio {
+        padding-left: 0;
+        padding-right: 0;
+
+        h2 {
+            font-size: 2.3rem;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        
+        div {
+            .carrusel {
+                display: flex;
+                flex-wrap: nowrap;
+                overflow: scroll;
+                width: 100%;
+                height: auto;
+                border: 2px solid black;
+
+                .imgCarrusel {
+                    flex: 1 0 auto;
+                    margin: 0 30px;
+                    width: 300px;
+                    opacity: 1;
+                }
+            }
+        }
+
+        .video {
+            flex-direction: column;
+            margin-top: 50px;
+
+            h3 {
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+
+            iframe {
+                margin-top: 80px;
+                width: 95%;
+            }
+        }
+    }
+
     /* quienes somos */
     .mainQuienesSomos {
         padding: 50px 5% 40px;
@@ -54,6 +99,20 @@
         }
     }
 
+    .mainContactanos {
+        padding: 50px 5% 40px;
+
+        section {
+
+            div {
+
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
+
     /* footer */
     footer {
 
@@ -71,10 +130,18 @@
 
 /* tamaño mediano */
 @media (min-width: 767px) and (max-width: 992px) {
+
+    /* quienes somos */
+    .mainQuienesSomos {
+        padding-top: 100px;
+    }
+
     /* contacto */
-    .mainContacto {
+    .mainContactanos {
+        padding-top: 100px;
+
         section {
-            
+
             div {
                 display: flex;
                 flex-direction: column;
@@ -98,8 +165,8 @@
 
     /* servicios */
     .mainServicios {
-        padding: 50px 5% 600px;
-    
+        padding: 100px 5% 600px;
+
         section {
             grid-template-columns: repeat(2, 1fr);
             gap: 3% 10%;
@@ -114,4 +181,38 @@
             }
         }
     }
+
+    /* inicio */
+    .mainInicio {
+        padding-left: 0;
+        padding-right: 0;
+
+        h2 {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        div {
+
+            section {
+                margin: 0;
+                width: 100%;
+            }
+        }
+
+        .video {
+            flex-direction: column;
+            margin-top: 50px;
+
+            h3 {
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+
+            iframe {
+                margin-top: 80px;
+            }
+        }
+    }
+
 }

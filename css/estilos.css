@@ -24,6 +24,10 @@ main {
   background-size: cover;
 }
 
+header {
+  z-index: 1;
+}
+
 .headerImgLogo {
   object-fit: cover;
   width: 16rem;
@@ -38,7 +42,7 @@ main {
   margin: auto 0 auto auto;
 }
 
-.mainProyectos img:hover {
+.carrusel img:hover {
   cursor: crosshair;
   width: 300px;
   opacity: 1;
@@ -70,9 +74,14 @@ header nav div nav ul li {
   font-weight: bold;
 }
 
-/* vista principal */
+/* inicio */
 .mainInicio h2 {
-  font-size: 10rem;
+  font-size: 5vw;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.mainInicio div {
+  margin-bottom: 150px;
 }
 .mainInicio div section {
   display: flex;
@@ -88,8 +97,51 @@ header nav div nav ul li {
   opacity: 0.8;
   transition: 0.5s ease;
 }
+.mainInicio .video {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainInicio .video h3 {
+  text-align: center;
+  font-size: 2rem;
+}
+.mainInicio .video iframe {
+  width: 560px;
+  height: 315px;
+}
 
-/* vista quienes somos */
+/* servicios */
+.mainServicios {
+  padding-bottom: 600px;
+}
+.mainServicios section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  gap: 5%;
+  justify-content: center;
+}
+.mainServicios section div {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mainServicios section div img {
+  width: 100%;
+  padding: 20px 20px 10px 20px;
+}
+.mainServicios section div p {
+  text-align: center;
+  margin-top: 2%;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+/* quienes somos */
 .mainQuienesSomos {
   padding: 180px 20% 200px;
 }
@@ -102,7 +154,7 @@ header nav div nav ul li {
   font-size: 2rem;
 }
 
-/* vista contactanos */
+/* contactanos */
 .mainContactanos section div {
   display: flex;
   width: 100%;
@@ -136,36 +188,6 @@ header nav div nav ul li {
 .mainContactanos section div form div textarea {
   width: auto;
   margin: 3%;
-}
-
-/* vista servicios */
-.mainServicios {
-  padding-bottom: 600px;
-}
-.mainServicios section {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(auto, 1fr);
-  gap: 5%;
-  justify-content: center;
-}
-.mainServicios section div {
-  background-color: white;
-  border: 2px solid black;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.mainServicios section div img {
-  width: 100%;
-  padding: 20px 20px 10px 20px;
-}
-.mainServicios section div p {
-  text-align: center;
-  margin-top: 2%;
-  font-size: 1.5vw;
-  font-weight: bold;
 }
 
 /* footer */
@@ -205,6 +227,42 @@ footer nav li {
     object-fit: cover;
     width: 12rem;
   }
+  /* inicio */
+  .mainInicio {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .mainInicio h2 {
+    font-size: 2.3rem;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .mainInicio div .carrusel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+  }
+  .mainInicio div .carrusel .imgCarrusel {
+    flex: 1 0 auto;
+    margin: 0 30px;
+    width: 300px;
+    opacity: 1;
+  }
+  .mainInicio .video {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .mainInicio .video h3 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .mainInicio .video iframe {
+    margin-top: 80px;
+    width: 95%;
+  }
   /* quienes somos */
   .mainQuienesSomos {
     padding: 50px 5% 40px;
@@ -233,6 +291,12 @@ footer nav li {
     text-align: start;
     margin: auto 0;
   }
+  .mainContactanos {
+    padding: 50px 5% 40px;
+  }
+  .mainContactanos section div img {
+    display: none;
+  }
   /* footer */
   footer img {
     width: 70px;
@@ -244,25 +308,32 @@ footer nav li {
 }
 /* tamaño mediano */
 @media (min-width: 767px) and (max-width: 992px) {
+  /* quienes somos */
+  .mainQuienesSomos {
+    padding-top: 100px;
+  }
   /* contacto */
-  .mainContacto section div {
+  .mainContactanos {
+    padding-top: 100px;
+  }
+  .mainContactanos section div {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .mainContacto section div form {
+  .mainContactanos section div form {
     margin: auto;
   }
-  .mainContacto section div form h2 {
+  .mainContactanos section div form h2 {
     text-align: center;
   }
-  .mainContacto section div img {
+  .mainContactanos section div img {
     width: 100%;
     margin-top: 50px;
   }
   /* servicios */
   .mainServicios {
-    padding: 50px 5% 600px;
+    padding: 100px 5% 600px;
   }
   .mainServicios section {
     grid-template-columns: repeat(2, 1fr);
@@ -272,6 +343,30 @@ footer nav li {
   .mainServicios section div p {
     margin: auto;
     font-size: 4vw;
+  }
+  /* inicio */
+  .mainInicio {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .mainInicio h2 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .mainInicio div section {
+    margin: 0;
+    width: 100%;
+  }
+  .mainInicio .video {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .mainInicio .video h3 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .mainInicio .video iframe {
+    margin-top: 80px;
   }
 }
 

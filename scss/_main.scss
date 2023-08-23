@@ -1,11 +1,14 @@
-/* vista principal */
+/* inicio */
 .mainInicio {
 
     h2 {
-        font-size: 10rem;
+        font-size: 5vw;
+        text-align: center;
+        margin-bottom: 100px;
     }
 
     div {
+        margin-bottom: 150px;
 
         section {
             display: flex;
@@ -23,10 +26,59 @@
             }
         }
     }
+
+    .video {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h3 {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        iframe {
+            width: 560px;
+            height: 315px;
+        }
+    }
 }
 
+/* servicios */
+.mainServicios {
+    padding-bottom: 600px;
 
-/* vista quienes somos */
+    section {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
+        gap: 5%;
+        justify-content: center;
+
+        div {
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            img {
+                width: 100%;
+                padding: 20px 20px 10px 20px;
+            }
+
+            p {
+                text-align: center;
+                margin-top: 2%;
+                font-size: 1.5vw;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+/* quienes somos */
 .mainQuienesSomos {
     padding: 180px 20% 200px;
 
@@ -44,7 +96,7 @@
     }
 }
 
-/* vista contactanos */
+/* contactanos */
 .mainContactanos {
 
     section {
@@ -88,40 +140,6 @@
                         margin: 3%;
                     }
                 }
-            }
-        }
-    }
-}
-
-/* vista servicios */
-.mainServicios {
-    padding-bottom: 600px;
-
-    section {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(auto, 1fr);
-        gap: 5%;
-        justify-content: center;
-
-        div {
-            background-color: white;
-            border: 2px solid black;
-            border-radius: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-
-            img {
-                width: 100%;
-                padding: 20px 20px 10px 20px;
-            }
-
-            p {
-                text-align: center;
-                margin-top: 2%;
-                font-size: 1.5vw;
-                font-weight: bold;
             }
         }
     }
